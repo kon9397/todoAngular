@@ -1,0 +1,9 @@
+<div class="container">
+    <ul *ngFor="let task of tasks">
+        <li>
+            <h3>{{ task.todo_title }}</h3>
+            <p>{{ task.todo_text }}</p>
+            <p>Date to finish: {{ task.date_to_finish }}</p>
+        </li>
+    </ul>    
+</div>

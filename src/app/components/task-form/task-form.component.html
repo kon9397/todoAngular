@@ -1,0 +1,24 @@
+<div class="container">
+    <h2>Add todo</h2>
+    <div class="task-form">
+        <form [formGroup]="taskData" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your todo title" formControlName="todo_title">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your task" formControlName="todo_text">
+            </div>
+            <div class="form-group">
+                <input type="date" placeholder="Date to finish" formControlName="date_to_finish">
+            </div>
+            <div class="form-group">
+                
+                <label>Done?<input type="checkbox" formControlName="done"></label>
+            </div>
+            <button type="submit">Add Task</button>
+        </form>
+    </div>
+</div>
+<div class="container">
+    <app-task-list></app-task-list>
+</div>
